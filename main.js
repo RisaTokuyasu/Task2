@@ -1,4 +1,10 @@
  
+ 
+ 
+      $(document).ready(function(){
+       
+       
+     
      let clock = document.getElementById("clock");
      let start = document.getElementById("start");
      let stop = document.getElementById("stop");
@@ -28,11 +34,11 @@
             TenSec++;
             OneSec = 0;
             
-            if(TenSec / 10 == 1){
+            if(TenSec / 60 == 1){
             HundSec++;
             TenSec = 0;
             
-             if(HundSec / 10 == 1){
+             if(HundSec / 60 == 1){
             ThouSec++;
             HundSec = 0;
             
@@ -91,3 +97,4 @@
   
   
  
+    });
