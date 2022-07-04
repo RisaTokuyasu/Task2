@@ -16,7 +16,9 @@
     let timer;
     
     
-    
+
+     
+     
   function countup(){
         
       //カウントアップ
@@ -41,10 +43,13 @@
         }
          
              
-         clock.innerHTML = ThouSec + ':' +  HundSec  + ':' + TenSec + ":" + OneSec;
+        clock.innerHTML=ThouSec + ':' +  HundSec  + ':' + TenSec + ":" + OneSec;
   
             
         }
+ 
+  
+ 
  
    start.addEventListener("click",function(){
     timer = setInterval(countup,100)
@@ -68,6 +73,13 @@
  reset.addEventListener("click",function(){
   clearInterval(timer);
   clock.innerHTML = "0:0:0:0";
+    
+     ThouSec = 0;
+     HundSec = 0;
+     TenSec = 0;
+     OneSec = 0;
+    
+  
   
   
    //表示非表示
